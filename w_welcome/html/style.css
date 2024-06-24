@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+:root {
+    --Number: 0.74vh;
+    --Key: #00B2FF;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    overflow: hidden;
+    width: 55.67vw;
+    height: 62.67vh;
+    border-radius: 0.74vh;
+    background: #031218;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3.5vh 2.23vw;
+    display: none;
+    gap: 2vh;
+    flex-direction: column;
+}
+
+.container > .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.74vh;
+    border: 0.09vh solid #092F3F;
+    background: var(--Active-Shade-BG-50, linear-gradient(0deg, rgba(0, 178, 255, 0.10) 0%, rgba(0, 178, 255, 0.10) 100%), rgba(0, 0, 0, 0.50));
+    padding: 1.11vh 1.25vw;
+}
+
+.container > .header > .title {
+    font-size: 1.6vh;
+}
+
+.container > .header > .timeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 2.5vw;
+}
+
+.container > .header > .timeContainer > img {
+    height: 1.85vh;
+}
+
+.container > .header > .timeContainer > .time {
+    font-size: 1.3vh;
+    color: #0B9908;
+}
+
+.container > .content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.74vh;
+    border: 0.09vh solid #092F3F;
+    background: var(--Active-Shade-BG-50, linear-gradient(0deg, rgba(0, 178, 255, 0.10) 0%, rgba(0, 178, 255, 0.10) 100%), rgba(0, 0, 0, 0.50));
+    padding: 2.5vh 1.5vw;
+    height: 100%;
+}
+
+.questionContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 2.22vh;
+}
+
+.questionContainer > .firstWelcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12vh;
+}
+
+.questionContainer > .firstWelcome > .title {
+    font-size: 3vh;
+}
+
+.questionContainer > .firstWelcome > .desc {
+    font-weight: 400;
+    font-size: 2.2vh;
+    text-align: center;
+}
+
+.container > .content > .questionContainer > .question {
+    font-size: 2.6vh;
+    max-height: 30%;
+    padding-bottom: 3vh;
+
+}
+
+.container > .content > .questionContainer > .answer {
+    border-radius: 0.74vh;
+    background: var(--Active-shade-BG, linear-gradient(0deg, rgba(0, 178, 255, 0.20) 0%, rgba(0, 178, 255, 0.20) 100%), rgba(0, 0, 0, 0.50));
+    padding: 1.11vh 1.25vw;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+
+.container > .content > .questionContainer > .answer.selected,
+.container > .content > .questionContainer > .answer:hover {
+    background: var(--Key, #00B2FF);
+}
+
+.container > .content > .btnConfirm {
+    padding: 0.74vh 0.83vw;
+    cursor: pointer;
+    border-radius: 0.74vh;
+    background: var(--Key, #00B2FF);
+    color: #031218;
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+.container > .content > .btnConfirm:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* .container > .title {
+    font-size: 4vh;
+    max-width: 80%;
+    word-break: break-word;
+}
+
+.container > .btnsContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.33vh;
+}
+
+.container > .btnsContainer > .btn {
+    border-radius: 0.74vh;
+    background: var(--Active-shade-BG, linear-gradient(0deg, rgba(0, 178, 255, 0.20) 0%, rgba(0, 178, 255, 0.20) 100%), rgba(0, 0, 0, 0.50));
+    padding: 1.3vh 0.83vw;
+    font-size: 1.5vh;
+    position: relative;
+}
+
+.container > .btnsContainer > .btn:hover {
+    cursor: pointer;
+    background-color: #00B2FF;
+}
+
+.container > .btnsContainer > .btn.selected {
+    background-color: #00B2FF;
+}
+
+.container > .btnNext {
+    border-radius: 0.74vh;
+    background: var(--Active-shade-BG, linear-gradient(0deg, rgba(0, 178, 255, 0.20) 0%, rgba(0, 178, 255, 0.20) 100%), rgba(0, 0, 0, 0.50));
+    padding: 1.3vh 3vw;
+    font-size: 1.5vh;
+    position: relative;
+}
+
+.container > .btnNext:hover {
+    cursor: pointer;
+    background-color: #00B2FF;
+} */
